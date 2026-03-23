@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - CoolKat</title>
+    <meta name="description" content="Get in touch with the developer of CoolKat. Report bugs, share feedback, or ask questions.">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-hero {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .contact-hero p {
+            font-size: 1.1rem;
+            color: var(--muted);
+            max-width: 520px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .email-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 2.5rem;
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .email-card .email-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--muted);
+            margin-bottom: 0.75rem;
+        }
+
+        .email-card a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+
+        .email-card a:hover {
+            text-decoration: underline;
+        }
+
+        .email-card .email-note {
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin-top: 0.75rem;
+        }
+
+        .topics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .topic-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .topic-card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            letter-spacing: -0.01em;
+        }
+
+        .topic-card p {
+            color: var(--muted);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .response-note {
+            background: var(--section-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border-left: 3px solid var(--accent);
+        }
+
+        .response-note p {
+            font-size: 0.95rem;
+            color: #44403C;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .topics-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">C</div>
+                <div class="logo-text">CoolKat</div>
+            </a>
+            <div class="header-links">
+                <a href="index.html">Home</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-container">
+
+        <div class="contact-hero">
+            <h1>Get in Touch</h1>
+            <p>CoolKat is built and maintained by a solo developer. I read every message personally, so you can reach out to me directly with anything on your mind.</p>
+        </div>
+
+        <div class="email-card">
+            <div class="email-label">Email me directly</div>
+            <a href="mailto:katwal.dipak@hotmail.com">katwal.dipak@hotmail.com</a>
+            <div class="email-note">I typically respond within 24-48 hours.</div>
+        </div>
+
+        <div class="section">
+            <h2>What can I help with?</h2>
+        </div>
+
+        <div class="topics-grid">
+            <div class="topic-card">
+                <h3>Bug Reports</h3>
+                <p>Something not working as expected? Let me know what happened, your device model, and iOS version so I can fix it quickly.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Feature Requests</h3>
+                <p>Have an idea that would make CoolKat better? I'd love to hear it. User feedback directly shapes the roadmap.</p>
+            </div>
+            <div class="topic-card">
+                <h3>General Feedback</h3>
+                <p>Whether it's something you love or something that could be improved, your honest feedback helps me build a better app.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Questions & Support</h3>
+                <p>Need help with anything in the app? Confused about a feature? Just ask and I'll get back to you personally.</p>
+            </div>
+        </div>
+
+        <div class="response-note">
+            <p><strong>A note from the developer:</strong> CoolKat is a passion project built with care. As a solo developer, I may not always respond instantly, but I genuinely value every piece of feedback and work hard to make each update better than the last. Thank you for using CoolKat.</p>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-left">2026 CoolKat. All rights reserved.</div>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

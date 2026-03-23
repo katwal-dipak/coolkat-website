@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoolKat - Weight Loss Tracker</title>
+    <meta name="description" content="CoolKat helps you slim down, stay fit and healthy. Track your weight daily, see your progress, and reach your goals. No login required.">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* ---- Hero ---- */
+        .hero {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 10rem 2rem 6rem;
+            text-align: center;
+        }
+
+        .hero-tagline {
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent);
+            margin-bottom: 1.25rem;
+        }
+
+        .hero h1 {
+            font-size: 3.25rem;
+            font-weight: 700;
+            letter-spacing: -0.035em;
+            line-height: 1.15;
+            margin-bottom: 1.25rem;
+            max-width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: var(--muted);
+            max-width: 520px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.75;
+        }
+
+        /* ---- Features ---- */
+        .features {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 4rem 2rem 5rem;
+        }
+
+        .features-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .features-header h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.75rem;
+        }
+
+        .features-header p {
+            color: var(--muted);
+            font-size: 1.05rem;
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 1.75rem;
+            transition: border-color 0.2s;
+        }
+
+        .feature-card:hover {
+            border-color: var(--accent);
+        }
+
+        .feature-icon {
+            width: 42px;
+            height: 42px;
+            background: #FFF7ED;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .feature-icon svg {
+            width: 22px;
+            height: 22px;
+            stroke: var(--accent);
+            fill: none;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .feature-card h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-card p {
+            color: var(--muted);
+            font-size: 0.9rem;
+            line-height: 1.65;
+        }
+
+        /* ---- Values ---- */
+        .values {
+            background: var(--card-bg);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            padding: 3.5rem 2rem;
+        }
+
+        .values-inner {
+            max-width: 960px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .value-item h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            letter-spacing: -0.01em;
+        }
+
+        .value-item p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        /* ---- CTA ---- */
+        .cta {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.75rem;
+        }
+
+        .cta p {
+            color: var(--muted);
+            font-size: 1.05rem;
+            margin-bottom: 2rem;
+        }
+
+        /* ---- Responsive ---- */
+        @media (max-width: 768px) {
+            .hero { padding: 8rem 1.25rem 4rem; }
+            .hero h1 { font-size: 2.25rem; }
+            .hero p { font-size: 1.05rem; }
+            .features { padding: 3rem 1.25rem 4rem; }
+            .features-grid { grid-template-columns: 1fr; gap: 1rem; }
+            .values { padding: 2.5rem 1.25rem; }
+            .values-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+            .cta { padding: 3.5rem 1.25rem; }
+            .cta h2 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">C</div>
+                <div class="logo-text">CoolKat</div>
+            </a>
+            <div class="header-links">
+                <a href="#features">Features</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="hero-tagline">Weight Loss Tracker for iOS</div>
+        <h1>Track your weight. See real progress.</h1>
+        <p>CoolKat makes weight tracking simple and honest. No account needed, no complicated setup. Just log your weight and watch your progress over time.</p>
+        <a href="https://apps.apple.com/app/coolkat" class="app-store-btn" aria-label="Download on the App Store">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 21.99 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 21.99C7.79 22.03 6.8 20.68 5.96 19.47C4.25 16.56 2.93 11.3 4.7 7.72C5.57 5.94 7.36 4.86 9.28 4.84C10.56 4.82 11.78 5.72 12.57 5.72C13.36 5.72 14.85 4.62 16.4 4.8C17.05 4.83 18.89 5.08 20.04 6.82C19.94 6.88 17.62 8.23 17.65 11.06C17.68 14.42 20.54 15.51 20.58 15.52C20.55 15.61 20.12 17.16 19.03 18.75L18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/></svg>
+            <div class="btn-text-group">
+                <span class="btn-label">Download on the</span>
+                <span class="btn-store">App Store</span>
+            </div>
+        </a>
+    </section>
+
+    <section class="features" id="features">
+        <div class="features-header">
+            <h2>Everything you need, nothing you don't</h2>
+            <p>Built for people who are serious about their goals. No distractions, no bloat.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 20V10M6 20V4M18 20V16"/></svg>
+                </div>
+                <h3>Daily Weight Logging</h3>
+                <p>Log your weight in seconds. Clean, fast, and distraction-free. Build a daily habit that sticks.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </div>
+                <h3>Progress Charts</h3>
+                <p>See your weight trend over days, weeks, and months. Understand your real progress beyond daily fluctuations.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <h3>Goal Setting</h3>
+                <p>Set your target weight and track how close you are. Stay motivated with clear milestones along the way.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                </div>
+                <h3>No Account Needed</h3>
+                <p>Start tracking immediately. No sign-up, no email, no password. Your data stays yours.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+                </div>
+                <h3>iCloud Sync</h3>
+                <p>Your weight data syncs automatically across all your Apple devices through your personal iCloud account.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                </div>
+                <h3>Private by Design</h3>
+                <p>No analytics, no trackers, no ads. We never see your data. Everything stays on your device and your iCloud.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="values">
+        <div class="values-inner">
+            <div class="value-item">
+                <h3>Free to Use</h3>
+                <p>Core weight tracking is completely free. No paywalls for the basics.</p>
+            </div>
+            <div class="value-item">
+                <h3>Built for Commitment</h3>
+                <p>Designed for people who are serious about long-term progress, not quick fixes.</p>
+            </div>
+            <div class="value-item">
+                <h3>Actively Developed</h3>
+                <p>New features like calorie tracking and BMI are on the way. This is just the beginning.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Start tracking today</h2>
+        <p>No account. No setup. Just results.</p>
+        <a href="https://apps.apple.com/app/coolkat" class="app-store-btn" aria-label="Download on the App Store">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 21.99 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 21.99C7.79 22.03 6.8 20.68 5.96 19.47C4.25 16.56 2.93 11.3 4.7 7.72C5.57 5.94 7.36 4.86 9.28 4.84C10.56 4.82 11.78 5.72 12.57 5.72C13.36 5.72 14.85 4.62 16.4 4.8C17.05 4.83 18.89 5.08 20.04 6.82C19.94 6.88 17.62 8.23 17.65 11.06C17.68 14.42 20.54 15.51 20.58 15.52C20.55 15.61 20.12 17.16 19.03 18.75L18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/></svg>
+            <div class="btn-text-group">
+                <span class="btn-label">Download on the</span>
+                <span class="btn-store">App Store</span>
+            </div>
+        </a>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-left">2026 CoolKat. All rights reserved.</div>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
