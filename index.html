@@ -6,6 +6,7 @@
     <title>CoolKat - Weight Loss Tracker</title>
     <meta name="description" content="CoolKat helps you slim down, stay fit and healthy. Track your weight daily, see your progress, and reach your goals. No login required.">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/coolkat_logo.png">
     <link rel="stylesheet" href="style.css">
     <style>
         /* ---- Hero ---- */
@@ -17,20 +18,27 @@
         }
 
         .hero-tagline {
-            font-size: 0.85rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: var(--accent);
-            margin-bottom: 1.25rem;
-        }
-
-        .hero h1 {
             font-size: 3.25rem;
             font-weight: 700;
             letter-spacing: -0.035em;
             line-height: 1.15;
             margin-bottom: 1.25rem;
+            max-width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-tagline .brand-name {
+            color: var(--accent);
+        }
+
+        .hero h1 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            line-height: 1.4;
+            margin-bottom: 1.25rem;
+            color: var(--muted);
             max-width: 640px;
             margin-left: auto;
             margin-right: auto;
@@ -175,7 +183,8 @@
         /* ---- Responsive ---- */
         @media (max-width: 768px) {
             .hero { padding: 8rem 1.25rem 4rem; }
-            .hero h1 { font-size: 2.25rem; }
+            .hero-tagline { font-size: 2.5rem; }
+            .hero h1 { font-size: 1rem; }
             .hero p { font-size: 1.05rem; }
             .features { padding: 3rem 1.25rem 4rem; }
             .features-grid { grid-template-columns: 1fr; gap: 1rem; }
@@ -191,8 +200,7 @@
     <div class="header">
         <div class="header-inner">
             <a href="/" class="logo">
-                <div class="logo-icon">C</div>
-                <div class="logo-text">CoolKat</div>
+                <img src="images/coolkat_logo.png" alt="CoolKat" class="logo-icon">
             </a>
             <div class="header-links">
                 <a href="#features">Features</a>
@@ -203,7 +211,7 @@
     </div>
 
     <section class="hero">
-        <div class="hero-tagline">Weight Loss Tracker for iOS</div>
+        <div class="hero-tagline"><span class="brand-name">CoolKat</span><br>Weight Loss Tracker</div>
         <h1>Track your weight. See real progress.</h1>
         <p>CoolKat makes weight tracking simple and honest. No account needed, no complicated setup. Just log your weight and watch your progress over time.</p>
         <a href="https://apps.apple.com/app/6756367775" class="app-store-btn" aria-label="Download on the App Store">
@@ -217,7 +225,7 @@
 
     <section class="features" id="features">
         <div class="features-header">
-            <h2>Everything you need, nothing you don't</h2>
+            <h2>Simple by design. Powerful by habit.</h2>
             <p>Built for people who are serious about their goals. No distractions, no bloat.</p>
         </div>
         <div class="features-grid">
