@@ -5,9 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoolKat - Weight Loss Tracker</title>
     <meta name="description" content="CoolKat helps you slim down, stay fit and healthy. Track your weight daily, see your progress, and reach your goals. No login required.">
+    <link rel="canonical" href="https://coolkat.app/">
+    <meta name="apple-itunes-app" content="app-id=6756367775">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://coolkat.app/">
+    <meta property="og:title" content="CoolKat - Weight Loss Tracker">
+    <meta property="og:description" content="Track your weight daily, see your progress, and reach your goals. No login required. Free for iOS.">
+    <meta property="og:image" content="https://coolkat.app/images/coolkat_logo.png">
+    <meta property="og:site_name" content="CoolKat">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="CoolKat - Weight Loss Tracker">
+    <meta name="twitter:description" content="Track your weight daily, see your progress, and reach your goals. No login required. Free for iOS.">
+    <meta name="twitter:image" content="https://coolkat.app/images/coolkat_logo.png">
+
+    <link rel="apple-touch-icon" href="images/coolkat_logo.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/coolkat_logo.png">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "CoolKat",
+        "description": "CoolKat helps you slim down, stay fit and healthy. Track your weight daily, see your progress, and reach your goals. No login required.",
+        "url": "https://coolkat.app",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "iOS",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "image": "https://coolkat.app/images/coolkat_logo.png",
+        "installUrl": "https://apps.apple.com/app/6756367775"
+    }
+    </script>
     <style>
         /* ---- Hero Logo ---- */
         .hero-logo {
@@ -43,7 +84,7 @@
             color: var(--accent);
         }
 
-        .hero h1 {
+        .hero .hero-subtitle {
             font-size: 1.1rem;
             font-weight: 500;
             letter-spacing: -0.01em;
@@ -196,7 +237,7 @@
             .hero-logo { width: 90px; height: 90px; border-radius: 18px; margin-bottom: 1.25rem; }
             .hero { padding: 8rem 1.25rem 4rem; }
             .hero-tagline { font-size: 2.5rem; }
-            .hero h1 { font-size: 1rem; }
+            .hero .hero-subtitle { font-size: 1rem; }
             .hero p { font-size: 1.05rem; }
             .features { padding: 3rem 1.25rem 4rem; }
             .features-grid { grid-template-columns: 1fr; gap: 1rem; }
@@ -224,10 +265,10 @@
 
     <section class="hero">
         <img src="images/coolkat_logo.png" alt="CoolKat Logo" class="hero-logo">
-        <div class="hero-tagline"><span class="brand-name">CoolKat</span><br>Weight Loss Tracker</div>
-        <h1>Track your weight. See real progress.</h1>
+        <h1 class="hero-tagline"><span class="brand-name">CoolKat</span><br>Weight Loss Tracker</h1>
+        <p class="hero-subtitle">Track your weight. See real progress.</p>
         <p>CoolKat makes weight tracking simple and honest. No account needed, no complicated setup. Just log your weight and watch your progress over time.</p>
-        <a href="https://apps.apple.com/app/6756367775" class="app-store-btn" aria-label="Download on the App Store">
+        <a href="https://apps.apple.com/app/6756367775" class="app-store-btn" aria-label="Download on the App Store" rel="noopener noreferrer" target="_blank">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 21.99 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 21.99C7.79 22.03 6.8 20.68 5.96 19.47C4.25 16.56 2.93 11.3 4.7 7.72C5.57 5.94 7.36 4.86 9.28 4.84C10.56 4.82 11.78 5.72 12.57 5.72C13.36 5.72 14.85 4.62 16.4 4.8C17.05 4.83 18.89 5.08 20.04 6.82C19.94 6.88 17.62 8.23 17.65 11.06C17.68 14.42 20.54 15.51 20.58 15.52C20.55 15.61 20.12 17.16 19.03 18.75L18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/></svg>
             <div class="btn-text-group">
                 <span class="btn-label">Download on the</span>
@@ -307,7 +348,7 @@
     <section class="cta">
         <h2>Start tracking today</h2>
         <p>No account. No setup. Just results.</p>
-        <a href="https://apps.apple.com/app/6756367775" class="app-store-btn" aria-label="Download on the App Store">
+        <a href="https://apps.apple.com/app/6756367775" class="app-store-btn" aria-label="Download on the App Store" rel="noopener noreferrer" target="_blank">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 21.99 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 21.99C7.79 22.03 6.8 20.68 5.96 19.47C4.25 16.56 2.93 11.3 4.7 7.72C5.57 5.94 7.36 4.86 9.28 4.84C10.56 4.82 11.78 5.72 12.57 5.72C13.36 5.72 14.85 4.62 16.4 4.8C17.05 4.83 18.89 5.08 20.04 6.82C19.94 6.88 17.62 8.23 17.65 11.06C17.68 14.42 20.54 15.51 20.58 15.52C20.55 15.61 20.12 17.16 19.03 18.75L18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/></svg>
             <div class="btn-text-group">
                 <span class="btn-label">Download on the</span>
